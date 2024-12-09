@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "parcel build src/index.html --dist-dir dist",
+    "postbuild": "npm install parcel-bundler",
     "dev": "node server.js"
   },
   "keywords": [],
