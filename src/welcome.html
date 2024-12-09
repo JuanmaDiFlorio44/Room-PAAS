@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="dato" placeholder="Ingresa un dato" />
+    <a href="index.html"></a>
+    <button onclick="guardarDato()">Guardar y Abrir Página 2</button>
+    <script>
+      function guardarDato() {
+        const dato = document.getElementById("dato").value;
+        localStorage.setItem("user", dato);
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
